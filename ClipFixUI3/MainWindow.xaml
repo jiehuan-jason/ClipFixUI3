@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="ClipFixUI3.MainWindow"
+    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ClipFixUI3"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="ClipFixUI3">
+
+    <Window.SystemBackdrop>
+        <MicaBackdrop />
+    </Window.SystemBackdrop>
+
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Loaded="StackPanel_Loaded">
+        <TextBlock Text="ClipFixUI3" FontSize="60" Margin="0,10,10,10" HorizontalAlignment="Center"/>
+        <TextBlock Text="自动修改剪贴板中的X/哔哩哔哩链接以保护隐私" FontSize="20" Margin="10,0,10,10"/>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <CheckBox Content="开机自启动" FontSize="16" x:Name="StartUpBox" Click="StartUpBox_Click"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

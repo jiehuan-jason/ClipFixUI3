@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ClipFixUI3 (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "ClipFixUI3 (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
