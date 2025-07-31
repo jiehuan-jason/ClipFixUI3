@@ -9,15 +9,15 @@
   IgnorableNamespaces="uap rescap">
 
   <Identity
-    Name="e8b8bc64-9e10-4bc6-ac00-4de0b9e55fb0"
-    Publisher="CN=jiehuan"
+    Name="JasonWang.19869E20EB8B"
+    Publisher="CN=huan"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="e8b8bc64-9e10-4bc6-ac00-4de0b9e55fb0" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="c86e9d72-33a8-43a0-b69d-d28074159fb1" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>ClipFixUI3</DisplayName>
-    <PublisherDisplayName>jiehuan</PublisherDisplayName>
+    <DisplayName>ClipFix UI3</DisplayName>
+    <PublisherDisplayName>Jason Wang</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -35,12 +35,12 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="ClipFixUI3"
+        DisplayName="ClipFix UI3"
         Description="ClipFixUI3"
         BackgroundColor="transparent"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" />
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"  Square71x71Logo="Assets\SmallTile.png" Square310x310Logo="Assets\LargeTile.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
         <uap:InitialRotationPreference>
           <uap:Rotation Preference="portrait"/>
@@ -61,5 +61,6 @@
 
   <Capabilities>
     <rescap:Capability Name="runFullTrust" />
+    <Capability Name="internetClient"/>
   </Capabilities>
 </Package>
